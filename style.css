@@ -86,9 +86,11 @@ header {
 
 
 .member-portraits {
-    
+    background-color: black;
+    color: white;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    margin: 25px;
+    margin: 0 25px 0 25px;
+    font-weight: bold;
 }
 
     .member-portraits img {
