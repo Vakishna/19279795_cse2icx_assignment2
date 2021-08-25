@@ -1,10 +1,14 @@
 ﻿body, html {
-    font-family: Arial;
+    font-family: 'Monda', sans-serif;
     margin: 0;
     height: 100%;
 }
 
 /* Hero Banner */
+h1, h2, h3, h4, h5 {
+    font-weight: 700;
+}
+
 
 header {
     width: 100%;
@@ -14,6 +18,7 @@ header {
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+
 }
 
 .heroContent {
@@ -55,13 +60,15 @@ header {
     margin: auto;
     border-radius: 5px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    font-family: 'Monda', sans-serif;
 }
 
 .navbar a {
     color: white;
     padding: 14px 20px;
     text-decoration: none;
-    text-align: center;  
+    text-align: center;
+
 }
 
 .navbar a:hover {
@@ -107,18 +114,22 @@ header {
 
 #jarrodDesc {
     display: none;
+    font-family: 'Monda', sans-serif;
 }
 
 #daisyDesc {
     display: none;
+    font-family: 'Monda', sans-serif;
 }
 
 #ivyDesc {
     display: none;
+    font-family: 'Monda', sans-serif;
 }
 
 #renDesc {
     display: none;
+    font-family: 'Monda', sans-serif;
 }
 
 
