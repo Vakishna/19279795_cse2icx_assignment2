@@ -93,6 +93,10 @@ header {
     display: none;
 }
 
+#daisyDesc {
+    display: none;
+}
+
 
 .member-portraits img {
     width: 100%; 
