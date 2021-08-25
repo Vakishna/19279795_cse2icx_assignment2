@@ -1,5 +1,3 @@
-﻿$(document).ready(function () {
-    $("button").click(function () {
-        $("p").hide();
-    });
+﻿$("#jarrod").click(function () {
+    $("#jarrodDesc").show();
 });
