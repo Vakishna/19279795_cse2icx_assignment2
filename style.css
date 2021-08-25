@@ -6,8 +6,7 @@
 
 /* Hero Banner */
 h1, h2, h3, h4, h5 {
-    font-weight: 700;
-    
+    font-weight: 700;    
 }
 
 h3 {
@@ -50,7 +49,6 @@ header {
 }
 
 /* Navigation Bar */
-
 .navigation {
     display: flex;
     background-color: #3A5683;
@@ -85,11 +83,13 @@ header {
 
 .team-container {
     display: flex;
+    flex: 1;
     flex-wrap: wrap;
 }
 
 .member {
-    flex: 20%;
+    flex: 1;
+
     text-align: center;
 }
 
@@ -108,7 +108,7 @@ header {
 }
 
 .profileDesc {
-    width: 750px;
+    width: 75%;
     margin: auto;
 }
 
@@ -116,7 +116,6 @@ header {
     Hide member descriptions,
     until they are toggled.
 */
-
 #jarrodDesc {
     display: none;
     font-family: 'Monda', sans-serif;
@@ -138,6 +137,44 @@ header {
 }
 
 
+/* Footer */
 
+footer {
+    display: grid;
+    position: relative;
+    padding: 5px 0 0 0;
+    text-align: center;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #1c2331;
+    color: white;
+    grid-template-areas:
+        'left left middle middle right right'
+        'left left middle middle right right'
+        'left left middle middle right right'
+        'bottom bottom bottom bottom bottom bottom';
+}
 
+.left {
+    grid-area: left;
 
+}
+.middle { 
+    grid-area: middle; 
+
+}
+.right { 
+    grid-area: right; 
+
+}
+.bottom {
+    grid-area: bottom;
+    text-align: center;
+    margin: 0 0 0 0;
+   
+}
+
+.cont {
+    min-height: 336px;
+}
