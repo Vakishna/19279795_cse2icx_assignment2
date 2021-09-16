@@ -37,12 +37,62 @@
 
     <main>
         <h1 style="font-family: 'Montserrat', sans-serif; font-size: 48px; text-align: center;">Order</h1>
+        
+        <div style="width: 75%; margin: auto;">
+            <p>
+                Maecenas dolor magna, vehicula vitae elementum id, venenatis et lorem. Duis at aliquam eros. Etiam hendrerit dignissim turpis, sed sagittis risus. Phasellus et pulvinar orci. Quisque dolor nulla, lobortis quis urna eget, venenatis scelerisque nulla. Duis tempor turpis nulla, et cursus odio feugiat a. Nullam bibendum nunc ultricies velit aliquam, id rhoncus nibh interdum.
+            </p>
+        </div>
+
+        <hr />
+
+        <form method="get" action="response.html" style="width: 75%; margin: auto;">
+            <label for="fullName">Full Name: </label>
+            <input id="txtFullName" name="fullName" type="text" />
+            <br />
+            <br />
+            <label for="billingAddress">Billing Address:</label>
+            <br />
+            <textarea id="billingAddress" name="billingAddress" rows="5"></textarea>
+            <br />
+            <label for="deliveryMethod">Delivery Method:</label><br/>
+            <input id="pickup" type="radio" name="deliveryMethod" value="pickup" />
+            <label for="pickup">Pickup</label><br>
+ 
+            <input id="delivery" type="radio" name="deliveryMethod" value="delivery" />
+            <label for="delivery">Delivery</label><br>
+
+            <p>Products: </p>
+
+
+            <button id="itemAdder" type="button">Add Item</button>
+            <br />
+
+
+            <div id="items">
+                <div id="item1" class="item">
+                    <label for="item1">Item 1:</label>
+                    <select id="item1" name="item1">
+                        <option id="eucalyptusCaesia" value="eucalyptusCaesia">Eucalyptus Caesia</option>
+                        <option id="eucalyptusPauciflora" value="eucalyptusPauciflora">Eucalyptus Pauciflora</option>
+                        <option id="corymbiaFicifolia" value="corymbiaFicifolia">Corymbia Ficifolia</option>
+                        <option id="callistemonCitrinus" value="callistemonCitrinus">Callistemon Citrinus</option>
+                    </select>
+                </div>
+            </div>
+
+            <input type="submit" value="Submit">
+
+        </form>
+
+
+
 
     </main>
 
 
 
-    <script src="js/index.js"></script>
+    <script src="js/order.js"></script>
 
 
 </body>
