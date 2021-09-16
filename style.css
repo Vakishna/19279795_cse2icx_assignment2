@@ -188,7 +188,7 @@ header {
 }
 
 
-@media only screen and (max-width: 960px) {
+@media only screen and (max-width: 1090px) {
     #itemContainer {
         display: block;      
         margin: auto auto auto auto;
