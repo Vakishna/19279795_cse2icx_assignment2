@@ -1,3 +1,17 @@
+function Arrange() {
+    var i = 1;   
+    $('#items').children('div').each(function () {
+        $(this).attr('id', 'item'+i+'Div');
+        $(this).children('label').attr('for', "item"+i);
+        $(this).children('label').text("Item " + i + ": ");
+        $(this).children('button').attr('id', 'removeItem' + i);
+        $(this).children('select').attr('id', "item"+i);
+        $(this).children('select').attr('name', "item"+i);
+        i++;
+    });
+}
+
+
 $("#itemAdder").click(function() {
     var n = $(".item").length;
     var newItem = n + 1;
@@ -22,10 +36,9 @@ $("#itemAdder").click(function() {
     var optAnigozanthosFlavidus = "<option id=\"anigozanthosFlavidus\" value=\"anigozanthosFlavidus\">Anigozanthos Flavidus</option>";
     var optAngophoraCostata = "<option id=\"angophoraCostata\" value=\"angophoraCostata\">Angophora Costata</option>";
 
-    var itemList  = "<select id=\"item" + newItem + "\"name=\"item" + newItem + "\"></select>"
-  
+    var itemList  = "<select id=\"item" + newItem + "\"name=\"item" + newItem + "\"></select>";
+
     $("#item"+newItem+'Div').append(itemList);
-    
     $("#item" + newItem).append(optEucalyptusCaesia);
     $("#item" + newItem).append(optEucalytusPauciflora);
     $("#item" + newItem).append(optCorymbiaFicifolia);
@@ -43,6 +56,13 @@ $("#itemAdder").click(function() {
     $("#item" + newItem).append(optAngophoraCostata);
 
 
+    $("#item"+newItem+'Div').append("<button id=\"removeItem"+newItem + "\"" +  "class=\"removeItem\"" + " type=\"button\">Remove</button>");
 
-
+    $("#removeItem"+newItem).on('click', function () {
+        var par = $(this).parent().attr('id');
+        $("#" + par).remove();
+        Arrange();
+    });
 });
+
+

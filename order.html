@@ -1,109 +1,138 @@
 ﻿<!DOCTYPE html>
 <html>
-<head>
-    <meta charset="utf-8" />
-    <meta name="author" content="Good Gums" />
-    <meta name="student_id" content="19279795" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Order</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Monda&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-    <script src="vendor/jquery-3.6.0.min.js"></script>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="author" content="Good Gums" />
+        <meta name="student_id" content="19279795" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Order</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Monda&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+        <script src="vendor/jquery-3.6.0.min.js"></script>
 
-</head>
-<body>
-    <header>
-        <div class="heroContent">
-            <img src="images/GoodGums-logo.png" />
-
-            <h2 style="margin: 0 5px 25px 0; font-family: lobster; font-size: 48px;">Plant Nursery</h2>
-        </div>
-    </header>
-    <div class="navigation">
-        <div class="navbar">
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="products.html">Products</a>
-            <a id="current" href="order.html">Order</a>
-        </div>
-    </div>
-
-    <main>
-        <h1 style="font-family: 'Montserrat', sans-serif; font-size: 48px; text-align: center;">Order</h1>
-        
-        <div style="width: 75%; margin: auto;">
-            <p>
-                Maecenas dolor magna, vehicula vitae elementum id, venenatis et lorem. Duis at aliquam eros. Etiam hendrerit dignissim turpis, sed sagittis risus. Phasellus et pulvinar orci. Quisque dolor nulla, lobortis quis urna eget, venenatis scelerisque nulla. Duis tempor turpis nulla, et cursus odio feugiat a. Nullam bibendum nunc ultricies velit aliquam, id rhoncus nibh interdum.
-            </p>
-        </div>
-
-        <hr />
-
-        <form method="get" action="response.html" style="width: 75%; margin: auto;">
-            <label for="fullName">Full Name: </label>
-            <input id="txtFullName" name="fullName" type="text" />
-            <br />
-            <br />
-            <label for="billingAddress">Billing Address:</label>
-            <br />
-            <textarea id="billingAddress" name="billingAddress" rows="5"></textarea>
-            <br />
-            <label for="deliveryMethod">Delivery Method:</label><br/>
-            <input id="pickup" type="radio" name="deliveryMethod" value="pickup" />
-            <label for="pickup">Pickup</label><br>
- 
-            <input id="delivery" type="radio" name="deliveryMethod" value="delivery" />
-            <label for="delivery">Delivery</label><br>
-
-            <p>Products: </p>
-
-
-            <button id="itemAdder" type="button">Add Item</button>
-            <br />
-
-            <div id="items">
-                <div id="item1Div" class="item">
-                    <label for="item1">Item 1:</label>
-                    <select id="item1" name="item1">
-                        <option id="eucalyptusCaesia" value="eucalyptusCaesia">Eucalyptus Caesia</option>
-                        <option id="eucalyptusPauciflora" value="eucalyptusPauciflora">Eucalyptus Pauciflora</option>
-                        <option id="corymbiaFicifolia" value="corymbiaFicifolia">Corymbia Ficifolia</option>
-                        <option id="callistemonCitrinus" value="callistemonCitrinus">Callistemon Citrinus</option>
-                        <option id="hardenbergiaViolacea" value="hardenbergiaViolacea">Hardenbergia Violacea</option>
-                        <option id="poaLabillardierei" value="poaLabillardierei">Poa Labillardierei</option>
-                        <option id="acaciaPycnantha" value="acaciaPycnantha">Acacia Pycnantha</option>
-                        <option id="syzygiumSmithii" value="syzygiumSmithii">Syzygium Smithii</option>
-                        <option id="correaFederationBellXMannii" value="correaFederationBellXMannii">Canberra Bells</option>
-                        <option id="grevilliaFirecracker" value="grevilliaFirecracker">Grevillia Firecracker</option>
-                        <option id="grevilliaRobusta" value="grevilliaRobusta">Grevillia Robusta</option>
-                        <option id="telopeaSpeciosissima" value="telopeaSpeciosissima">Telopea Speciosissima</option>
-                        <option id="boroniaSerrulata" value="boroniaSerrulata">Boronia Serrulata</option>
-                        <option id="anigozanthosFlavidus" value="anigozanthosFlavidus">Anigozanthos Flavidus</option>
-                        <option id="angophoraCostata" value="angophoraCostata">Angophora Costata</option>                        
-                    </select>
-                </div>
+    </head>
+    <body>
+        <header>
+            <div class="heroContent">
+                <img src="images/GoodGums-logo.png" />
+                <h2 style="margin: 0 5px 25px 0; font-family: lobster; font-size: 48px;">Plant Nursery</h2>
             </div>
+        </header>
+        <div class="navigation">
+            <div class="navbar">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="products.html">Products</a>
+                <a id="current" href="order.html">Order</a>
+            </div>
+        </div>
 
-            <input type="submit" value="Submit">
+        <main>
+            <h1 style="font-family: 'Montserrat', sans-serif; font-size: 48px; text-align: center;">Order</h1>            
+            
+            <div style="width: 95%; margin: auto;">
+                <p>Maecenas dolor magna, vehicula vitae elementum id, venenatis et lorem. Duis at aliquam eros. Etiam hendrerit dignissim turpis, sed sagittis risus. Phasellus et pulvinar orci. Quisque dolor nulla, lobortis quis urna eget, venenatis scelerisque nulla. Duis tempor turpis nulla, et cursus odio feugiat a. Nullam bibendum nunc ultricies velit aliquam, id rhoncus nibh interdum.</p>
+            </div>
+            
+            <hr />
+            <section style="width: 95%; margin: auto;">
+                <h2 style="font-family: 'Montserrat', sans-serif; font-size: 32px; text-align: center; ">Order Form</h2>
+                <form id="orderForm" method="get" action="response.html" >
+                    <label for="fullName">Full Name: </label>
+                    <input id="txtFullName" name="fullName" type="text" required="required" />
+                    <br>
+                    
+                    <label for="email">Email: </label>
+                    <input id="txtEmail" name="email" type="email" required="required" />
+                    <br>
 
-        </form>
+                    <label for="contactNumber">Phone: </label>
+                    <input id="txtContactNumber" name="contactNumber" type="tel" required="required" />
+                    <br />
+                    <br>
+                    <label for="billingAddress">Billing Address:</label>
+                    <br />
+                    <textarea id="billingAddress" name="billingAddress" cols="55" rows="5" required="required" ></textarea>
+                    <br />
+                    <br>
+                    <label for="deliveryMethod">Shipping Preference:</label><br>
+                    <input id="pickup" type="radio" name="deliveryMethod" value="pickup" required="required" />
+                    <label for="pickup">Pickup</label>
+        
+                    <input id="delivery" type="radio" name="deliveryMethod" value="delivery" required="required" />
+                    <label for="delivery">Delivery</label><br>
+                    <br>
+                    Products:
+
+
+                    <button id="itemAdder" type="button">Add Item</button>
+                    
+
+                    <div id="items">
+                        <div id="item1Div" class="item">
+                            <label for="item1">Item 1:</label>
+                            <select id="item1" name="item1" required="required">
+                                <option id="eucalyptusCaesia" value="eucalyptusCaesia">Eucalyptus Caesia</option>
+                                <option id="eucalyptusPauciflora" value="eucalyptusPauciflora">Eucalyptus Pauciflora</option>
+                                <option id="corymbiaFicifolia" value="corymbiaFicifolia">Corymbia Ficifolia</option>
+                                <option id="callistemonCitrinus" value="callistemonCitrinus">Callistemon Citrinus</option>
+                                <option id="hardenbergiaViolacea" value="hardenbergiaViolacea">Hardenbergia Violacea</option>
+                                <option id="poaLabillardierei" value="poaLabillardierei">Poa Labillardierei</option>
+                                <option id="acaciaPycnantha" value="acaciaPycnantha">Acacia Pycnantha</option>
+                                <option id="syzygiumSmithii" value="syzygiumSmithii">Syzygium Smithii</option>
+                                <option id="correaFederationBellXMannii" value="correaFederationBellXMannii">Canberra Bells</option>
+                                <option id="grevilliaFirecracker" value="grevilliaFirecracker">Grevillia Firecracker</option>
+                                <option id="grevilliaRobusta" value="grevilliaRobusta">Grevillia Robusta</option>
+                                <option id="telopeaSpeciosissima" value="telopeaSpeciosissima">Telopea Speciosissima</option>
+                                <option id="boroniaSerrulata" value="boroniaSerrulata">Boronia Serrulata</option>
+                                <option id="anigozanthosFlavidus" value="anigozanthosFlavidus">Anigozanthos Flavidus</option>
+                                <option id="angophoraCostata" value="angophoraCostata">Angophora Costata</option>                        
+                            </select>                            
+                        </div>                
+                    </div>
+                    <br>
+
+                    Promotions Contact: <br>
+                    <input type="checkbox" id="communicationEmail" name="communicationEmail" value="Email">
+                    <label for="communicationEmail">Email</label>
+                    <input type="checkbox" id="communicationMobile" name="communicationMobile" value="Mobile">
+                    <label for="communicationMobile">Mobile</label>
+                    <input type="checkbox" id="communicationPost" name="communicationPost" value="Post">
+                    <label for="communicationPost">Post</label><br>
 
 
 
+                    <input id="btnSubmit" type="submit" value="Submit">
+                </form>
+            </section>
+        </main>
 
-    </main>
+        <hr>
+
+        <footer>
+            <div class="left">
+                Left
+            </div>
+            <div class="middle">
+                Middle
+            </div>
+            <div class="right">
+                Contact
+            </div>
+            
+            <div class="bottom">          
+                &copy; Good Gums - 2021
+            </div>
+        </footer>
 
 
-
-    <script src="js/order.js"></script>
-
-
-</body>
+        <script src="js/order.js"></script>
+    </body>
 </html>
